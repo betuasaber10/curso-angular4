@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'empleado',
-    template: `
-        <h2>{{titulo_componente_empleado}}</h2>
-    `
+    templateUrl: './empleado.component.html'
 })
+export class EmpleadoComponent{
+    titulo_componente_empleado = 'Componente de empleado';
+}
