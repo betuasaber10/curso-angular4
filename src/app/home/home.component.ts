@@ -19,12 +19,10 @@ export class HomeComponent{
         this.listado_ropa = this._ropaService.getRopa();
         console.log(this.listado_ropa);
     }
-
     guardarPrenda(){
         this._ropaService.addRopa(this.prenda_a_guardar);
         this.prenda_a_guardar = null;
     }
-
     eliminarPrenda(index:number){
         this._ropaService.deleteRopa(index);
         //alert(index);
